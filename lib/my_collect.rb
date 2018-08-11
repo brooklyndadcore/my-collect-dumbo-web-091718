@@ -1,8 +1,6 @@
 def my_collect(array)
   arr = []
-  array.each do |word|
-    arr << (yield word)
-  end
+  array.each { |word| arr << (yield word) }
   return arr
 end
 
