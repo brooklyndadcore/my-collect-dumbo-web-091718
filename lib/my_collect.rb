@@ -1,10 +1,8 @@
 def my_collect(array)
   arr = []
-  i = 0
-  while i < array.length 
-    new = yield array[i]
-    arr <<  new
-    i += 1
+  array.each do |word|
+    new = yield word
+    arr << new
   end
   return arr
 end
