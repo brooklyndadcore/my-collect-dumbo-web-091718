@@ -1,6 +1,8 @@
 def my_collect(array)
   arr = []
-  arrray.each {|ele| arr << yield}
+  arrray.each do |ele| 
+    arr << yield
+  end
   return arr
 end
 
