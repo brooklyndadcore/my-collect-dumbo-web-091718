@@ -1,7 +1,7 @@
 def my_collect(array)
   arr = []
   arrray.each do |ele| 
-    yield 
+    yield ele
     arr << ele
   end
   return arr
